@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    node {
-      label 'local'
+    docker {
+      image 'jenkins/ssh-agent:latest-jdk11'
     }
 
   }
